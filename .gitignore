@@ -15,3 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore les fichiers de travail...
+*.swp
+*~
+.DS_Store
