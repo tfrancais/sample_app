@@ -41,6 +41,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  # Prise en compte de ZenTest dans le package
+  gem 'ZenTest'
 end
 
 group :development do
@@ -56,6 +58,7 @@ end
 group :test do
   gem 'rspec', '~>2.8'
   gem 'webrat', '0.7.1'
+  gem 'spork', '0.9.0.rc5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
