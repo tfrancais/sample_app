@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   # Code statique utilisés au début du tuto
   # get 'pages/home'
   # get 'pages/contact'
   # get 'pages/about'
   
   # Routes au format rails
+  get '/signup',  :to => 'users#new'
   get '/contact', :to => 'pages#contact'
   get '/about',   :to => 'pages#about'
   get '/help',    :to => 'pages#help'
