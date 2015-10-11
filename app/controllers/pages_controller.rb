@@ -1,14 +1,18 @@
 class PagesController < ApplicationController
 	@AppName = "Simple App du Tutoriel Ruby on Rails"
   def home
-	@titre="Accueil"
+	@titre= "#{@AppName} | Accueil"
   end
 
   def contact
-	@titre="Contact"
+	@titre= "#{@AppName} | Contact"
   end
   
   def about
-	@titre="A Propos"
+	@titre= "#{@AppName} | A Propos"
+  end
+  
+  def help
+	@titre= "#{@AppName} | Aide"
   end
 end
